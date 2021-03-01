@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<style>
+body { 
+    display: flex;
+flex-direction: column; 
+display: flex;
+justify-content: center;
+} 
+.image {
+    width: 300px; 
+margin: 150px auto 10px;
+}
+.apps {
+    size: 100px
+    }
+
+.ul-head {
+    list-style-type: none;
+margin-top:10px;
+padding:0;
+position: fixed;
+top:0;
+width:100%;
+color: rgb(0,0,0);
+font-size: 13px;
+}
+li {
+    float:left;
+    }
+a {
+    display: block; 
+    }
+.li1 {
+    margin:  1% 1%;
+    }
+.li2 {
+    margin: 1% 1% 1% 1%;
+    }
+.li3 {
+    margin: 1% 3% 2% 0%;
+    }
+.grid {
+    scale: 0.06; margin: -105px
+    }
+.blue-button {
+    background-color: rgb(66, 133, 244);
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+font-weight: 700;
+padding: 5px;
+margin: -150px 0 0 0;
+border-radius: 4px;
+border-color: rgb(66, 133, 244);
+}
+a {
+    color: rgb(95,99,104);
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.image {
+    width: 280px; 
+margin: 190px auto 10px;
+}
+
+
+.search {
+     display: flex;
+    flex-direction: row;
+     margin: 15px 180px;
+width:550px;
+height: 40px;
+border-radius: 50px;
+border: 1px solid rgb(226, 217, 217); 
+align-items: stretch;
+margin-left:auto;
+margin-right: auto;
+}
+.search-bar{ 
+width:85%;
+height: 95%;
+    border-radius: 25px;
+background-color: white;
+border: white;
+box-shadow: none;
+outline: 0;
+font-size: 14px;
+padding-left: 20px;
+padding-right: 20px;
+}
+.search:hover {
+    box-shadow:0 0 5px #b0b0b3;
+    }
+.magnifying { 
+    transform: scale(0.03);
+margin: -210px;
+padding-right: 10px;
+}
+.keyboard {
+    transform:scale(0.6); align-items: 
+    flex-end; margin-right: 5px; 
+    }
+
+.container {
+    position:sticky;
+top:100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;}
+
+.button { 
+    color: #5f6368;
+background-color: #f2f2f2;
+border: 1px #f2f2f2;
+border-radius: 4px;
+padding: 10px;
+margin: 10px;
+font-size: 14px;
+}
+.button:hover {
+    border: 1px solid #dddbdb;
+color: black; ;
+}
+
+#button2:hover span  {
+    display: none;
+    }
+#button2:hover::before {
+    content: "I'm Feeling Confused"
+    }
+#button1 {
+margin:auto 20px auto 290px;
+}
+#button2 
+{
+margin:auto 290px auto 0;      
+}
+
+
+.ul-foot {
+    list-style-type: none;
+margin:0;
+padding:0;
+position: fixed;
+bottom:0;
+width:100%;
+background-color: rgb(242, 242, 242);
+font-size: 14px;
+line-height: 30px;
+}
+</style>
+
+
+<html>
+ <body> 
+    <header>
+    <ul class="ul-head">
+       <li class="li1"><a href=""> About </a></li>
+       <li class="li1"><a href=""> Store </a></li> 
+               <li class="li3" style="float:right"><button class=blue-button type="search"> Sign In </button> </li>
+       <li class="li1" style="float:right"><img class="grid" src="grid.png" alt="Google Apps">  </a></li>
+        <li class="li1" style="float:right"><a href="https://www.google.co.il/imghp?hl=iw&ogbl"> Images </a></li>
+       <li class="li2" style="float:right"><a href="https://www.gmail.com"> Gmail </a></li> 
+    </ul> 
+</header>
+    <img class="image" src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png alt="googlelogo"> 
+     <div class="search">
+     <img class="magnifying" src="index.png" alt="magnifying glass">
+     <input class="search-bar" type="text">
+     <img class="keyboard" src="microphone.png" alt="keyboard">
+    </div>
+    <div class="container">
+     <button class="button" type="search" id="button1"> Google Search </button> 
+     <button class="button" type="search" id="button2"> <span>I'm feeling lucky </span></button> 
+    </div>
+  
+     <footer > <ul class="ul-foot">
+        <li class="li1"><a href=""> Advertising </a></li>
+        <li class="li1"><a href=""> Business </a></li>
+        <li class="li1"><a href=""> How Search works </a></li>
+        <li class="li1"  style="float:right"><a href=""> Settings </a></li>
+        <li class="li1"  style="float:right"><a href=""> Terms </a></li>
+        <li class="li1"  style="float:right"><a href=""> Privacy </a></li>
+        
+       
+    </ul> 
+
+</footer>
+    </body>
+</html>
