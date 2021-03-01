@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<style> 
+ul {list-style-type: none;
+margin:0;
+padding:0;
+}
+li {float:left;
+;}
+.li1 {margin: 10px 20px;}
+.li2 {margin: 10px 20px 10px 500px;}
+.li3 {margin: 10px 0px}
+.grid {scale: 0.07; margin: -140px 0 0 680px;}
+a{color: grey;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+body { display: flex;
+flex-direction: column; 
+display: flex;
+justify-content: center;} 
+.image {width: 300px; 
+margin: 150px auto 10px;}
+.apps {size: 100px}
+
+
+.blue-button {background-color: rgb(64, 134, 190);
+color: white;
+margin: -150px 0 0 0;}
+.logo {margin: 800px 150px 150px 150px;}
+
+
+.search {
+    display: flex;
+    flex-direction: row;
+     margin: 20px 180px;
+width:600px;
+height: 50px;
+border-radius: 50px;
+border: 1px solid rgb(226, 217, 217); 
+align-items: stretch;
+
+}
+.search-bar{ 
+width:85%;
+height: 95%;
+    border-radius: 25px;
+background-color: none;
+border: none;
+box-shadow: none;
+outline: 0;
+font-size: 14px;
+}
+.magnifying { transform: scale(0.04);
+margin: -200px;}
+.keyboard {transform:scale(0.05); align-items: flex-end; margin-right: 5px; }
+.search :hover { 
+    border: 5px rgb(41, 39, 41);
+text-emphasis: black;
+}
+.button { color: #5f6368;
+background-color: #f2f2f2;
+border: 1px #f2f2f2;
+border-radius: 4px;
+padding: 5px 0px;
+font-size: 14px;}
+.button:hover {box-shadow: gray;
+color: black; ;
+}
+#button2:hover span  {display: none;}
+#button2:hover::before {content: "I'm Feeling Confused"}
+#button1 {
+
+margin:auto 0px auto 290px;
+}
+#button2 
+{
+margin:auto 290px auto 0;      
+}
+.container {display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: auto;
+align-items: center;
+grid-column-gap: 10px;
+
+}
+
+.header-container { position: grid; 
+grid-template-columns: auto; 
+position: inline;
+width: 100%;
+top: 0; 
+display: flex;
+
+}
+.footer-container {background-color: rgb(236, 230, 230);
+position: fixed;
+bottom:0%;
+width: 100%;
+padding: 20px 0 0;
+}
+.li4 {margin: 0px 20px 10px;}
+.li5{margin: 0px 20px 10px 300px;}
+
+</style>
+<html>
+ <body> 
+    <div class="header-container"> <header>
+    <ul>
+       <li class="li1"><a href=""> About </a></li>
+        <li class="li1"><a href=""> Store </a></li>   
+      <li class="li2"><a href=""> Gmail </a></li>
+        <li class="li1"><a href=""> Images </a></li>
+        <li class="li1"><img class="grid" src="  " alt="Google Apps">  </a></li>
+        <li class="li3"><button class=blue-button type="search"> Login </button> </li>
+   </ul> </div>
+</header>
+    <img class="image" src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png alt="googlelogo"> 
+     <div class="search">
+     <img class="magnifying" src="index.png" alt="magnifying glass">
+     <input class="search-bar" type="text">
+     <img class="keyboard" src="microphone.png" alt="keyboard">
+    </div>
+    <div class="container">
+     <button class="button" type="search" id="button1"> Google Search </button> 
+     <button class="button" type="search" id="button2"> <span>I'm feeling lucky </span></button> 
+    </div>
+    <div class="footer-container">
+     <footer> <ul>
+        <li class="li4"><a href=""> Advertizing </a></li>
+        <li class="li4"><a href=""> Business </a></li>
+        <li class="li4"><a href=""> How Search works </a></li>
+        <li class="li5"><a href=""> Privacy </a></li>
+        <li class="li4"><a href=""> Terms </a></li>
+        <li class="li4"><a href=""> Settings </a></li>
+    </ul> 
+</div>
+</footer>
+    </body>
+</html>
